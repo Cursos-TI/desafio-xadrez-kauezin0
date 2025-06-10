@@ -6,7 +6,7 @@
 
 int main() {
 
-    int i;
+    int i = 0;
 
     while (i <= 5){
         printf("Direita");
