@@ -8,6 +8,7 @@ void torre(int num){
 }
 
 void bispo(int num){
+    
     if (num > 0){
         printf("Cima, Direita\n");
         bispo(num - 1);
@@ -23,70 +24,50 @@ void rainha(int num){
 
 int main() {
 
-    //Nivel novato
-    
-    //declarando o index
 
-    int t=0, b=0, r=0;
-
-    //nome da peça
 
     printf(" **Movimento da torre**\n\n");
 
     torre(5);
 
-    //Nome da peça
 
     printf(" \n**Movimento do bispo**\n\n");
 
     bispo(5);
 
-    //Nome da peça
 
     printf(" \n**Movimento da rainha**\n\n");
 
     rainha(8);
-/*
-    //Estrutura de repetiçao da rainha (do-while)
 
-    do {
 
-        printf("Esquerda\n");
-        r++;
 
-    } while (r < 8);
+    int cima = 0, direita = 0;
 
-    //declarando o movimento da peça
-
-    int movimentodapeca = 1;
-
-    //Nome da peça
 
     printf(" \n**Movimento do cavalo**\n\n");
 
-    //Estrutura de repetiçao do cavalo (for aninhado)
+     for(int i = 0; i < 10; i++){
 
-    while (movimentodapeca--){
-
-        for(int i = 0; i < 2; i++){
+        if(cima < 2){
 
             printf("Cima\n");
-        }
-        printf("direita\n");
 
-    };
+            cima++;
+
+            continue;
+        }
+
+        if (cima == 2 && direita == 0){
+            printf("Direita\n");
+
+            direita++;
+
+            break;
+        } 
         
 
-    // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
-
-    // Nível Mestre - Funções Recursivas e Loops Aninhados
-    // Sugestão: Substitua as movimentações das peças por funções recursivas.
-    // Exemplo: Crie uma função recursiva para o movimento do Bispo.
-
-    // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
-    // Inclua o uso de continue e break dentro dos loops.
-*/ 
+    };
+      
     return 0;
 }
