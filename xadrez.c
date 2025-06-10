@@ -7,6 +7,13 @@ void torre(int num){
     }
 }
 
+void bispo(int num){
+    if (num > 0){
+        printf("Cima, Direita\n");
+        bispo(num - 1);
+    }
+}
+
 int main() {
 
     //Nivel novato
@@ -21,19 +28,12 @@ int main() {
 
     torre(5);
 
-    //Estrutura de repetiçao da torre (while)
-
-/*   while (t < 5){
-
-        printf("Direita\n");
-        t++;
-
-    };
-
     //Nome da peça
 
     printf(" \n**Movimento do bispo**\n\n");
 
+    bispo(5);
+/* 
     //Estrutura de repetiçao do bispo (for)
 
     for(b; b < 5; b++){
