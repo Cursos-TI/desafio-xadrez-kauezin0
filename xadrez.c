@@ -8,10 +8,10 @@ int main() {
 
     int i = 0;
 
-    while (i <= 5){
-        printf("Direita");
+    while (i < 5){
+        printf("Direita\n");
         i ++;
-    }
+    };
     // Nível Novato - Movimentação das Peças
     // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
 
