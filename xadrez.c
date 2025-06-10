@@ -8,7 +8,7 @@ int main() {
 
     //declarando o index
 
-    int i = 0;
+    int t=0, b=0, r=0;
 
     //nome da peça
 
@@ -16,12 +16,25 @@ int main() {
 
     //Estrutura de repetiçao da torre (while)
 
-    while (i < 5){
+    while (t < 5){
 
         printf("Direita\n");
-        i ++;
+        t++;
 
     };
+
+    //Nome da peça
+
+    printf(" \n**Movimento do bispo**\n\n");
+
+    //Estrutura de repetiçao do bispo (for)
+
+    for(b; b < 5; b++){
+
+        printf("Cima, direita\n");
+
+    };
+
 
     
     // Nível Novato - Movimentação das Peças
