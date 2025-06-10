@@ -14,6 +14,13 @@ void bispo(int num){
     }
 }
 
+void rainha(int num){
+    if(num > 0){
+        printf("Esquerda\n");
+        rainha(num - 1);
+    }
+}
+
 int main() {
 
     //Nivel novato
@@ -33,19 +40,13 @@ int main() {
     printf(" \n**Movimento do bispo**\n\n");
 
     bispo(5);
-/* 
-    //Estrutura de repetiçao do bispo (for)
-
-    for(b; b < 5; b++){
-
-        printf("Cima, direita\n");
-
-    };
 
     //Nome da peça
 
     printf(" \n**Movimento da rainha**\n\n");
 
+    rainha(8);
+/*
     //Estrutura de repetiçao da rainha (do-while)
 
     do {
