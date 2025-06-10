@@ -6,12 +6,24 @@
 
 int main() {
 
+    //declarando o index
+
     int i = 0;
 
+    //nome da peça
+
+    printf(" **Movimento da torre**\n\n");
+
+    //Estrutura de repetiçao da torre (while)
+
     while (i < 5){
+
         printf("Direita\n");
         i ++;
+
     };
+
+    
     // Nível Novato - Movimentação das Peças
     // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
 
