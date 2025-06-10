@@ -50,6 +50,26 @@ int main() {
 
     } while (r < 8);
 
+    //declarando o movimento da peça
+
+    int movimentodapeca = 1;
+
+    //Nome da peça
+
+    printf(" \n**Movimento do cavalo**\n\n");
+
+    //Estrutura de repetiçao do cavalo (for aninhado)
+
+    while (movimentodapeca--){
+
+        for(int i = 0; i < 2; i++){
+
+            printf("Cima\n");
+        }
+        printf("direita\n");
+
+    };
+        
 
     // Nível Aventureiro - Movimentação do Cavalo
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
